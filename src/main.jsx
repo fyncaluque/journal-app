@@ -1,0 +1,15 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+// Custome CSS
+import "./styles.css";
+// Components
+import JournalApp from "./JournalApp";
+import { BrowserRouter } from "react-router-dom";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <JournalApp />
+    </BrowserRouter>
+  </React.StrictMode>
+);
