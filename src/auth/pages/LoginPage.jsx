@@ -21,7 +21,7 @@ export const LoginPage = () => {
   const { status, errorMessage } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const { email, password, onInputChange, formState } = useForm({
-    email: 'petito@google.com',
+    email: 'fernando@google.com',
     password: '123456',
   });
 
