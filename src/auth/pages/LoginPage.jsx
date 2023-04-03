@@ -19,8 +19,8 @@ import {
 
 // Datos de prueba:email:fernando@google.com , password:123456
 const formData = {
-  email: '',
-  password: '',
+  email: 'test@journal.com',
+  password: '123456',
 }
 export const LoginPage = () => {
   const { status, errorMessage } = useSelector((state) => state.auth);
