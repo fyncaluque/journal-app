@@ -1,14 +1,8 @@
-import { TurnedInNot } from '@mui/icons-material';
 import {
   Box,
   Divider,
   Drawer,
-  Grid,
   List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
   Toolbar,
   Typography,
 } from '@mui/material';
@@ -29,11 +23,11 @@ export const SideBar = ({ drawerWidth }) => {
         variant="permanent"
         open
         sx={{
-          display: { sm: 'block' },
+          display: { xs: 'none', sm: 'block' },
           '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
         }}
       >
-        <Toolbar>
+        <Toolbar style={{ background: '#262254', color: '#FFF' }} >
           <Typography variant="h6" noWrap component="div">
             {displayName}
           </Typography>
